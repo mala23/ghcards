@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import './App.css';
+import './app.css';
 
 export default class App extends Component {
   state = {
