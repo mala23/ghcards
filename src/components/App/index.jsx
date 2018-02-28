@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Card from '../Card'
+import Cards from '../Cards'
 
 class App extends Component {
   render() {
     return (
-      <Card />
+      <Cards />
     )
   }
 }
