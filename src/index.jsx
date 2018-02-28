@@ -1,4 +1,4 @@
-import React, { render } from 'react'
+import React, { render } from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import App from './components/App'
 import WebFont from 'webfontloader'
@@ -8,7 +8,7 @@ const load = () => render((
   <AppContainer>
     <App />
   </AppContainer>
-), root)
+), root);
 
 if (module.hot) {
   module.hot.accept('./components/App', load)
