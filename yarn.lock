@@ -8035,6 +8035,10 @@ wbuf@^1.1.0, wbuf@^1.7.2:
   dependencies:
     minimalistic-assert "^1.0.0"
 
+webfontloader@^1.6.28:
+  version "1.6.28"
+  resolved "https://registry.yarnpkg.com/webfontloader/-/webfontloader-1.6.28.tgz#db786129253cb6e8eae54c2fb05f870af6675bae"
+
 webpack-chain@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/webpack-chain/-/webpack-chain-4.5.0.tgz#390835bca2950f0f62fe3182ab90839ea8f6239d"

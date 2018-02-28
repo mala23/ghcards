@@ -1,19 +1,23 @@
-import { render } from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
-import App from './components/App/app';
+import React, { render } from 'react'
+import { AppContainer } from 'react-hot-loader'
+import App from './components/App'
+import WebFont from 'webfontloader'
 
-const root = document.getElementById('root');
-const load = () => render(
-  (
-    <AppContainer>
-      <App />
-    </AppContainer>
-  ), root,
-);
+const root = document.getElementById('root')
+const load = () => render((
+  <AppContainer>
+    <App />
+  </AppContainer>
+), root)
 
-// This is needed for Hot Module Replacement
 if (module.hot) {
-  module.hot.accept('./components/App/app', load);
+  module.hot.accept('./components/App', load)
 }
+
+WebFont.load({
+  typekit: {
+    id: 'nri5owq'
+  }
+})
 
 load();
