@@ -1,18 +1,16 @@
 import React, { Component } from 'react'
 import styles from './card.component.css'
 
-class Card extends Component {
-  render() {
-    return (
+const Card = (props) => {
+  return (
       <article>
-        <img src=""/>
+        <img src={props.avatar_url} />
         <section>
-          <p className="Name">Name here...</p>
-          <p>Company Name here...</p>
+          <p className="Name">{props.name}</p>
+          <p>{props.company}</p>
         </section>
       </article>
-    )
-  }
+  )
 }
 
 export default Card
