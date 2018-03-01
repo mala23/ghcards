@@ -1,0 +1,25 @@
+img {
+  width: 5rem;
+}
+
+article {
+  font-family: 'objektiv-mk3';
+  font-size: 1rem;
+  letter-spacing: .01rem;
+  line-height: 1.4rem;
+  margin: 1rem 0;
+}
+
+section {
+  margin: .4rem .6rem;
+  display: inline-block;
+}
+
+p {
+  margin: 0;
+}
+
+.Name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
