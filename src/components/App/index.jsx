@@ -6,25 +6,20 @@ import Form from '../Form'
 
 class App extends Component {
   state = {
-    cards: [
-      {
-        name: "Luca Nils Schmid",
-        avatar_url: "https://avatars1.githubusercontent.com/u/7280956?v=4",
-        company: "Vimcar",
-      },
-      {
-        name: "Fadie Hannona",
-        avatar_url: "https://avatars1.githubusercontent.com/u/7240284?v=4",
-        company: "Deloitte Digital",
-      }
-    ]
+    cards: []
+  }
+
+  addNewCard = (cardInfo) => {
+    this.setState(prevState => ({
+      cards: prevState.cards.concat(cardInfo)
+    }))
   }
 
   render() {
     return (
       <article>
-        <Form />
-        <CardList cards={this.state.cards}/>
+        <Form onSubmit={this.addNewCard} />
+        <CardList cards={this.state.cards} />
       </article>
     )
   }
